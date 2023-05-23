@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Los ladronzuelos de bicicletas</title>
+</head>
+
+<!-- Ya se que separar los elementos con br no es correcto, pero no conozco la manera de poner un margen sin utilizar css y todo quedaba muy pegado -->
+
+<body>
+  <fieldset>
+    <legend>Los ladronzuelos de bicicletas</legend>
+    <form>
+
+      <div>
+        <label for="dia">Día:</label>
+        <input type="date" id="dia" name="dia" tabindex="0" autofocus />
+      </div>
+
+      <br>
+
+      <div>
+        <label for="hora">Hora:</label>
+        <input type="time" id="hora" name="hora" tabindex="0" />
+      </div>
+
+      <br>
+
+      <div>
+        <label for="color">Color de la bicicleta:</label>
+        <input type="color" id="color" name="color" tabindex="0" />
+      </div>
+
+      <br>
+
+      <div>
+        <label for="precio">Precio de la bicicleta:</label>
+        <input type="range" id="precio" name="precio" min="0" max="5000" step="500" value="0" />
+      </div>
+
+      <br>
+
+      <div>
+        <select>
+          <optgroup label="Paseo">
+            <option value="señorial">Señorial</option>
+            <option value="antiPlebeyos">Anti-plebeyos</option>
+            <option value="porEncimaDelHombro">PorEncimaDelHombro</option>
+          </optgroup>
+
+          <optgroup label="Montaña">
+            <option value="gamusinos">Gamusinos</option>
+            <option value="hueleflores">Hueleflores premium</option>
+            <option value="fango">Fango lover</option>
+          </optgroup>
+
+          <optgroup label="Carreras">
+            <option value="metroYMedio">Metroymedio</option>
+            <option value="fluorescente">3 de la tarde. Fluorescente edition</option>
+            <option value="grupitors">Grupitors</option>
+          </optgroup>
+        </select>
+      </div>
+
+      <br>
+
+      <div>
+        <p>Accesorios:</p>
+        <label for="accesorios"></label>
+        <select id="accesorios" name="accesorios" multiple="true">
+          <option value="pegatinas">Pegatinas</option>
+          <option value="cestita">Cestita</option>
+          <option value="bomba">Bomba de aire</option>
+          <option value="foco">Foco</option>
+        </select>
+      </div>
+
+      <br>
+
+      <div>
+        <label for="marca">¿Qué marca era?:</label>
+        <select name="marca" id="marca">
+          <option value="specialized">specialized</option>
+          <option value="trek">trek</option>
+          <option value="merida">merida</option>
+          <option value="scott">scott</option>
+          <option value="giant">giant</option>
+          <option value="cube">cube</option>
+          <option value="lapierre">lapierre</option>
+          <option value="cannondale">cannondale</option>
+          <option value="bmc">bmc</option>
+          <option value="canyon">canyon</option>
+          <option value="look">protek</option>
+          <option value="megamo">megamo</option>
+          <option value="pinarello">pinarello</option>
+          <option value="bianchi">bianchi</option>
+          <option value="bh">bh</option>
+          <option value="factor">factor</option>
+          <option value="ghost">ghost</option>
+          <option value="cervelo">cervélo</option>
+          <option value="argon">argon</option>
+        </select>
+      </div>
+
+      <br>
+
+      <input type="submit" id="submit" tabindex="0">
+      <input type="reset" id="reset" tabindex="0">
+
+    </form>
+
+</body>
+
+</html>
